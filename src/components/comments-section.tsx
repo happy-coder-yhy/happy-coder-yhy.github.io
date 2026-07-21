@@ -12,10 +12,10 @@ export function CommentsSection() {
         💬 评论
       </h2>
       <Giscus
-        repo="happy-coder-yhy/haoyuyuan.github.io"
-        repoId="R_kgDOQMM8oQ"
+        repo="happy-coder-yhy/happy-coder-yhy.github.io"
+        repoId="R_kgDOTd747w"
         category="Announcements"
-        categoryId="DIC_kwDOQMM8oc4Cxfsu"
+        categoryId="DIC_kwDOTd74784DBo6t"
         mapping="pathname"
         strict="0"
         reactionsEnabled="1"
