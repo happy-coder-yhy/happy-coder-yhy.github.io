@@ -4,7 +4,7 @@ export const dynamic = 'force-static';
 
 export async function GET() {
   const slugs = getAllPostSlugs();
-  const siteUrl = 'https://haoyuyuan.github.io';
+  const siteUrl = 'https://happy-coder-yhy.github.io';
 
   const staticPages = [
     '',
