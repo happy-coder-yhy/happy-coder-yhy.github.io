@@ -1,7 +1,7 @@
 export function HeroSection({ locale }: { locale: 'zh' | 'en' }) {
   const copy = locale === 'zh'
     ? {
-        tagline: '杭州电子科技大学 · 计算机科学',
+        tagline: '杭州电子科技大学 · 计算机技术',
         title: '袁皓宇的知识 Wiki',
         intro: '你好，我是袁皓宇，杭州电子科技大学 2026 级计算机技术专业硕士研究生，本科毕业于中国民航大学。这里记录了我的学习经历、论文阅读笔记与项目经验，希望这些内容对你有所启发。',
         actionNotes: '查看论文笔记',
