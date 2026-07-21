@@ -1,0 +1,103 @@
+name: Auto Fetch and Summarize Papers
+
+on:
+  schedule:
+    # 每天凌晨4点运行 (UTC 20:00 = 北京时间 04:00)
+    - cron: '0 20 * * *'
+    # 每天下午4点运行 (UTC 08:00 = 北京时间 16:00)
+    - cron: '0 8 * * *'
+  workflow_dispatch:  # 支持手动触发
+
+jobs:
+  fetch-papers:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: |
+          cd scripts
+          npm install
+
+      - name: Fetch and process papers
+        env:
+          # Required
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+
+          # Optional - Custom API endpoint
+          OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL }}
+          OPENAI_ORG_ID: ${{ secrets.OPENAI_ORG_ID }}
+
+          # Optional - AI Models
+          AI_FILTER_MODEL: ${{ secrets.AI_FILTER_MODEL }}
+          AI_SUMMARIZE_MODEL: ${{ secrets.AI_SUMMARIZE_MODEL }}
+
+          # Optional - Filter settings
+          MIN_RELEVANCE_SCORE: ${{ secrets.MIN_RELEVANCE_SCORE }}
+          MAX_PAPERS_PER_DAY: ${{ secrets.MAX_PAPERS_PER_DAY }}
+
+          # Optional - Output settings
+          GENERATE_ENGLISH: ${{ secrets.GENERATE_ENGLISH }}
+
+          # Optional - Logging
+          LOG_LEVEL: ${{ secrets.LOG_LEVEL }}
+          VERBOSE: ${{ secrets.VERBOSE }}
+        run: |
+          cd scripts
+          node agent/main.js
+
+      - name: Check for changes
+        id: check_changes
+        run: |
+          if [[ -n $(git status --porcelain) ]]; then
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+          else
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Create Pull Request
+        if: steps.check_changes.outputs.has_changes == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: 'chore: add AI-curated papers'
+          branch: ai-papers-${{ github.run_number }}
+          title: '📄 AI Curated Papers - Run #${{ github.run_number }}'
+          body: |
+            ## 🤖 AI 自动筛选的论文
+
+            本PR由AI agent自动生成，包含今日筛选的优质论文。
+
+            **请在合并前review以下内容：**
+            - [ ] 论文质量是否符合标准
+            - [ ] 摘要总结是否准确
+            - [ ] 标签分类是否合理
+            - [ ] 格式是否正确
+
+            **运行信息：**
+            - 运行时间: ${{ github.event.repository.updated_at }}
+            - Run ID: ${{ github.run_id }}
+            - Run Number: ${{ github.run_number }}
+
+            ---
+            *由 GitHub Actions 自动生成*
+          labels: 'automated, papers, ai-curated'
+          assignees: qiankemeng
+
+      - name: No new papers found
+        if: steps.check_changes.outputs.has_changes == 'false'
+        run: |
+          echo "ℹ️ 没有找到符合筛选条件的新论文"
