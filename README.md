@@ -11,7 +11,7 @@
 - **姓名**：袁皓宇（Haoyu Yuan）
 - **硕士**：杭州电子科技大学，计算机技术，2026 级
 - **本科**：中国民航大学，计算机科学与技术，2022 - 2026
-- **研究方向**：LLM Agent 系统、知识外化与智能体协作
+- **研究方向**：LLM Agent(暂未确定)
 - **GitHub**：[happy-coder-yhy](https://github.com/happy-coder-yhy)
 
 ## 功能特性
