@@ -1,28 +1,18 @@
 [
   {
-    "title": "个人知识 Wiki",
-    "summary": "基于 Next.js 构建的个人知识库网站，支持 Markdown/MDX 内容编写、暗色模式、静态导出与 GitHub Pages 自动部署。记录学习笔记、论文阅读与项目经验。",
-    "tags": ["Next.js", "TypeScript", "Tailwind CSS", "MDX"],
+    "title": "Zata 数采平台 Agent",
+    "summary": "基于 Hermes Agent 的数采平台智能体，实现智能化的平台数据管理。通过 MCP Tools 将任务、作业维护自动化，支持管理员、采集员等多角色操作。",
+    "tags": ["Harness Agent", "MCP", "Python", "Hermes"],
     "links": {
-      "github": "https://github.com/happy-coder-yhy/haoyuyuan.github.io"
+      "github": "https://github.com/happy-coder-yhy/ZikiAgent.git"
     }
   },
   {
-    "title": "论文阅读追踪系统",
-    "summary": "用于追踪和管理论文阅读进度的工具，支持按主题、会议、年份筛选，自动统计阅读量与笔记完成度（规划中）。",
-    "tags": ["Python", "LLM", "Knowledge Graph"],
-    "links": {}
-  },
-  {
-    "title": "LLM 实验记录平台",
-    "summary": "记录大语言模型相关实验的参数、结果与分析。包括 Prompt Engineering、Fine-tuning、RAG 等方向的实验日志（规划中）。",
-    "tags": ["LLM", "Experiment", "MLOps"],
-    "links": {}
-  },
-  {
-    "title": "课程项目：简易 RAG 问答系统",
-    "summary": "基于 LangChain + ChromaDB 实现的检索增强生成问答系统，支持 PDF 文档上传、向量检索与大模型回答生成。",
-    "tags": ["RAG", "LangChain", "Python", "NLP"],
-    "links": {}
+    "title": "个人知识 Wiki",
+    "summary": "基于 Next.js 构建的个人知识库网站，支持 Markdown/MDX 内容编写、中英双语、暗色模式、静态导出与 GitHub Pages 自动部署。",
+    "tags": ["Next.js", "TypeScript", "Tailwind CSS", "MDX"],
+    "links": {
+      "github": "https://github.com/happy-coder-yhy/happy-coder-yhy.github.io"
+    }
   }
 ]

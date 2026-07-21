@@ -1,0 +1,12 @@
+[
+  {
+    "title": "Externalization in LLM Agents: A Unified Review of Memory, Skills, Protocols and Harness Engineering (2026)",
+    "year": "2026",
+    "category": "Paper Note",
+    "summary": "A systematic review of four dimensions of knowledge externalization in LLM Agents: Memory systems, Skill orchestration, Communication Protocols, and Harness Engineering — building a unified framework for agent system design and evaluation.",
+    "tags": ["LLM Agent", "Externalization", "Memory", "Survey"],
+    "links": [
+      { "label": "View Details", "url": "/blog/externalization-llm-agents", "type": "link" }
+    ]
+  }
+]

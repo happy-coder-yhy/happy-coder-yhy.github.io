@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Zata Data Collection Platform Agent",
+    "summary": "The intelligent agent of the data collection platform based on Hermes Agent realizes intelligent platform data management. Through MCP Tools, tasks and job maintenance are automated, and it supports operations by multiple roles such as administrators and collectors.",
+    "tags": ["Harness Agent", "MCP", "Python", "Hermes"],
+    "links": {
+      "github": "https://github.com/happy-coder-yhy/ZikiAgent.git"
+    }
+  },
+  {
+    "title": "Personal Knowledge Wiki",
+    "summary": "A personal knowledge base built with Next.js, featuring Markdown/MDX content authoring, bilingual support (zh/en), dark mode, static export, and automated GitHub Pages deployment.",
+    "tags": ["Next.js", "TypeScript", "Tailwind CSS", "MDX"],
+    "links": {
+      "github": "https://github.com/happy-coder-yhy/happy-coder-yhy.github.io"
+    }
+  }
+]

@@ -10,7 +10,11 @@ export async function GET() {
     '',
     '/blog',
     '/projects',
-    '/research'
+    '/research',
+    '/en',
+    '/en/blog',
+    '/en/projects',
+    '/en/research'
   ];
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
@@ -22,18 +26,27 @@ export async function GET() {
     <loc>${siteUrl}${page}</loc>
     <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>${page === '' ? '1.0' : '0.8'}</priority>
+    <priority>${page === '' || page === '/en' ? '1.0' : '0.8'}</priority>
   </url>`
     )
     .join('')}
   ${slugs
-    .map((slug) => `
+    .flatMap((slug) => [
+      `
   <url>
     <loc>${siteUrl}/blog/${slug}</loc>
     <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-  </url>`)
+  </url>`,
+      `
+  <url>
+    <loc>${siteUrl}/en/blog/${slug}</loc>
+    <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>`
+    ])
     .join('')}
 </urlset>`;
 

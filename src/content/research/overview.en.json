@@ -1,0 +1,18 @@
+{
+  "headline": "LLM Agent Systems & Knowledge Externalization",
+  "summary": "Focusing on LLM-driven agent systems, with emphasis on knowledge externalization mechanisms — including memory management, skill orchestration, protocol design, and harness engineering. Building deep understanding through systematic paper reading.",
+  "focus": [
+    {
+      "title": "LLM Agent Systems",
+      "description": "Researching LLM-based agent architectures, including tool use, reasoning & planning, multi-agent collaboration, and task orchestration."
+    },
+    {
+      "title": "Knowledge Externalization",
+      "description": "Exploring how LLM agents externalize and manage internal knowledge, including memory systems, skill libraries, communication protocols, and environment interaction interfaces."
+    },
+    {
+      "title": "Harness Engineering",
+      "description": "Engineering practices for agent systems, including experiment platforms, evaluation framework design, and MCP toolchain development."
+    }
+  ]
+}

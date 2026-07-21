@@ -2,25 +2,24 @@
   {
     "timeframe": "2026.09 - 至今",
     "title": "硕士研究生",
-    "company": "北京大学",
+    "company": "杭州电子科技大学",
     "logo": "",
-    "url": "https://www.pku.edu.cn/",
+    "url": "https://www.hdu.edu.cn/",
     "highlights": [
-      "计算机科学与技术 / 人工智能方向",
-      "研究兴趣：大语言模型、多模态学习、知识图谱",
-      "北京大学计算机学院"
+      "计算机技术专业",
+      "研究方向：LLM Agent",
+      "媒体智能实验室（MIL）"
     ]
   },
   {
     "timeframe": "2022.09 - 2026.06",
     "title": "本科生",
-    "company": "北京大学",
+    "company": "中国民航大学",
     "logo": "",
-    "url": "https://www.pku.edu.cn/",
+    "url": "https://www.cauc.edu.cn/",
     "highlights": [
       "计算机科学与技术专业",
-      "获得工学学士学位",
-      "GPA: 3.8/4.0，专业排名前 15%"
+      "获得工学学士学位"
     ]
   }
 ]
