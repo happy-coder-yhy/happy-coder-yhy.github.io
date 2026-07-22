@@ -8,5 +8,15 @@
     "links": [
       { "label": "View Details", "url": "/blog/externalization-llm-agents", "type": "link" }
     ]
+  },
+  {
+    "title": "EvoGraph-R1: Self-Evolving Multimodal Knowledge Hypergraphs for Agentic Retrieval",
+    "year": "2026",
+    "category": "Paper Note",
+    "summary": "Proposes EvoGraph-R1, a self-evolving GraphRAG framework that reframes knowledge graphs as dynamic MDP environments. Through agent-driven actions (GRAPHRetrieve, WEBSEARCH, GRAPHEDIT, ANSWER) and GRPO optimization, it achieves closed-loop co-evolution of hypergraph structure and reasoning, attaining SOTA on multimodal VQA and text QA benchmarks.",
+    "tags": ["GraphRAG", "Multimodal", "Reinforcement Learning", "GRPO", "Knowledge Hypergraph", "agentic retrieval"],
+    "links": [
+      { "label": "View Details", "url": "/blog/EvoGraph_R1", "type": "link" }
+    ]
   }
 ]

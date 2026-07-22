@@ -8,5 +8,15 @@
     "links": [
       { "label": "查看详情", "url": "/blog/externalization-llm-agents", "type": "link" }
     ]
+  },
+  {
+    "title": "EvoGraph-R1: Self-Evolving Multimodal Knowledge Hypergraphs for Agentic Retrieval",
+    "year": "2026",
+    "category": "论文笔记",
+    "summary": "提出EvoGraph-R1框架，将多模态知识图谱重构为动态MDP环境，通过智能体交互（检索、搜索、编辑、回答）和GRPO强化学习，实现图谱与推理过程的闭环协同演化，在VQA和文本QA上达到SOTA。",
+    "tags": ["图检索增强生成", "多模态", "强化学习", "组相对策略优化", "知识超图", "智能体"],
+    "links": [
+      { "label": "查看详情", "url": "/blog/EvoGraph_R1", "type": "link" }
+    ]
   }
 ]
