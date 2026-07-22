@@ -55,9 +55,9 @@ export const BlogFrontmatterSchema = z.object({
   doi: z.string().optional(),
 
   // Additional metadata
-  year: z.number().int().min(2000).max(2100).optional(),
+  year: z.coerce.number().int().min(2000).max(2100).optional(),
   area: z.string().optional(), // Research area, e.g., "multimodal-learning"
-  citation_count: z.number().int().min(0).default(0),
+  citation_count: z.coerce.number().int().min(0).default(0),
 
   // BibTeX (for easy citation)
   bibtex: z.string().optional()

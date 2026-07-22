@@ -6,7 +6,7 @@ tags: ['GraphRAG', 'Multimodal', 'Reinforcement Learning', 'GRPO', 'Knowledge Hy
 category: 'research'
 venue: '2026'
 status: 'published'
-year: '2026'
+year: 2026
 ---
 
 ## Paper Info
