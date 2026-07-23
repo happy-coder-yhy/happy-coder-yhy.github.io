@@ -25,7 +25,7 @@ This paper proposes GFM-RAG, a framework comprising three core components that e
 Transforms document corpora into structured knowledge graph indices as a bridge for integrating multi-source knowledge:
 - **Open Information Extraction (OpenIE)**: Utilizes LLM (GPT-4o-mini) to extract entities, relations, and triples from documents.
 - **Entity Resolution**: Employs a dense embedding model (ColBERTv2) to compute semantic similarity between entities, adding equivalence edges (e.g., `(USA, equivalent, United States)`) to enhance graph connectivity.
-- **Inverted Index**: Builds an entity-to-document mapping matrix \(M \in \{0,1\}^{|\mathcal{E}| \times |\mathcal{D}|}\), recording which entities appear in which documents.
+- **Inverted Index**: Builds an entity-to-document mapping matrix \(M \in \{0,1\}\{|\mathcal{E}| \times |\mathcal{D}|\}\), recording which entities appear in which documents.
 
 ### 2. Graph Foundation Model (GFM) Retriever
 
@@ -38,7 +38,7 @@ Core innovation: a **query-dependent Graph Neural Network** with only **8M param
 
 ### 3. Document Ranking & Answer Generation
 
-- **Entity Selection**: Selects Top-\(T\) most relevant entities based on GFM-predicted relevance scores \(P_q \in \mathbb{R}^{|\mathcal{E}| \times 1}\).
+- **Entity Selection**: Selects Top-\(T\) most relevant entities based on GFM-predicted relevance scores \(P_q \in \mathbb{R}\{|\mathcal{E}| \times 1\}\).
 - **Document Weighting**: Weighs selected entities by inverse document frequency (IDF) and aggregates to compute document scores \(P_d = M^\top F_e\), retrieving Top-\(K\) documents.
 - **LLM Generation**: Feeds retrieved documents and the query into an LLM (GPT-4o-mini) for final answer generation.
 

@@ -25,7 +25,7 @@ year: 2026
 将文档语料转化为结构化的知识图谱索引，作为多源知识整合的桥梁：
 - **开放信息抽取（OpenIE）**：利用 LLM（GPT-4o-mini）从文档中提取实体、关系和三元组。
 - **实体解析（Entity Resolution）**：通过密集嵌入模型（ColBERTv2）计算实体语义相似度，添加等价关系边（如 `(USA, equivalent, United States)`），增强图连通性。
-- **倒排索引**：构建实体到文档的映射矩阵 \(M \in \{0,1\}^{|\mathcal{E}| \times |\mathcal{D}|}\)，记录每个实体出现在哪些文档中。
+- **倒排索引**：构建实体到文档的映射矩阵 \(M \in \{0,1\}\{|\mathcal{E}| \times |\mathcal{D}|\}\)，记录每个实体出现在哪些文档中。
 
 ### 2. 图基础模型检索器（GFM Retriever）
 
@@ -38,7 +38,7 @@ year: 2026
 
 ### 3. 文档排序与答案生成（Document Ranking & Answer Generation）
 
-- **实体筛选**：根据 GFM 预测的实体相关性得分 \(P_q \in \mathbb{R}^{|\mathcal{E}| \times 1}\)，选取 Top-\(T\) 个最相关实体。
+- **实体筛选**：根据 GFM 预测的实体相关性得分 \(P_q \in \mathbb{R}\{|\mathcal{E}| \times 1\}\)，选取 Top-\(T\) 个最相关实体。
 - **文档加权**：对选中的实体，按其逆文档频率（IDF）加权，汇总得到文档得分 \(P_d = M^\top F_e\)，选取 Top-\(K\) 文档。
 - **LLM生成**：将检索到的文档与查询一同输入 LLM（GPT-4o-mini），生成最终答案。
 
