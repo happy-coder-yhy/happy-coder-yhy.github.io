@@ -1,5 +1,15 @@
 [
   {
+    "title": "GFM-RAG: Graph Foundation Model for Retrieval Augmented Generation",
+    "year": "2026",
+    "category": "Paper Note",
+    "summary": "Introduces the first Graph Foundation Model (GFM) for RAG, an 8M-parameter query-dependent GNN that enables single-step multi-hop retrieval. After two-stage training (self-supervised KG completion pre-training + supervised document retrieval fine-tuning), it generalizes zero-shot to unseen datasets, achieving SOTA on 3 multi-hop QA and 7 domain-specific RAG benchmarks while following neural scaling laws.",
+    "tags": ["GraphRAG", "Graph Foundation Model", "GNN", "Multi-hop Reasoning", "Retrieval-Augmented Generation"],
+    "links": [
+        { "label": "View Details", "url": "/blog/GFM-RAG", "type": "link" }
+    ]
+  },
+  {
     "title": "EvoGraph-R1: Self-Evolving Multimodal Knowledge Hypergraphs for Agentic Retrieval",
     "year": "2026",
     "category": "Paper Note",

@@ -1,5 +1,15 @@
 [
   {
+    "title": "GFM-RAG: Graph Foundation Model for Retrieval Augmented Generation",
+    "year": "2026",
+    "category": "论文笔记",
+    "summary": "提出首个用于RAG的图基础模型（GFM），通过8M参数的查询依赖GNN实现单步多跳推理。模型经两阶段训练（自监督KG补全预训练+有监督文档检索微调）后，可直接泛化到未见数据集，在3个多跳QA和7个领域RAG基准上达到SOTA，并遵循神经标度律。",
+    "tags": ["图检索增强生成", "图基础模型", "图神经网络", "多跳推理", "检索增强生成"],
+    "links": [
+      { "label": "查看详情", "url": "/blog/GFM-RAG", "type": "link" }
+    ]
+  },
+  {
     "title": "EvoGraph-R1: Self-Evolving Multimodal Knowledge Hypergraphs for Agentic Retrieval",
     "year": "2026",
     "category": "论文笔记",
