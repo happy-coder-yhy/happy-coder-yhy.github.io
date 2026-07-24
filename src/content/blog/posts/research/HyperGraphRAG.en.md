@@ -23,22 +23,22 @@ This paper proposes HyperGraphRAG, a framework comprising three core steps for h
 ### 1. Knowledge Hypergraph Construction
 
 Transforms document corpora into hypergraph structures with hyperedges modeling n-ary relations (n≥2):
-- **N-ary Relation Extraction**: Leverages LLM (GPT-4o-mini) for end-to-end extraction of knowledge fragments as hyperedges \(e_i = (e_i^{\text{text}}, e_i^{\text{score}})\), while recognizing associated entity sets \(V_{e_i} = \{v_1, v_2, \dots, v_n\}\) for each hyperedge. Each entity includes name, type, explanation, and confidence score.
-- **Bipartite Hypergraph Storage**: Stores the hypergraph \(G_H = (V, E_H)\) as a bipartite graph \(G_B = (V_B, E_B)\) via transformation \(\Phi\), where \(V_B = V \cup E_H\) and \(E_B = \{(e_H, v) \mid e_H \in E_H, v \in V_{e_H}\}\). This enables efficient querying using ordinary graph databases while preserving hypergraph structure losslessly, with support for incremental updates.
-- **Vector Representation Storage**: Generates dense embeddings \(\mathbf{h}_v = f(v)\) and \(\mathbf{h}_{e_H} = f(e_H)\) for all entities and hyperedges to support semantic retrieval.
+- **N-ary Relation Extraction**: Leverages LLM (GPT-4o-mini) for end-to-end extraction of knowledge fragments as hyperedges e_i = (e_i^text, e_i^score), while recognizing associated entity sets V\{e_i\} = \{v_1, v_2, ..., v_n\} for each hyperedge. Each entity includes name, type, explanation, and confidence score.
+- **Bipartite Hypergraph Storage**: Stores the hypergraph G_H = (V, E_H) as a bipartite graph G_B = (V_B, E_B) via transformation Φ, where V_B = V ∪ E_H and E_B = \{(e_H, v) | e_H ∈ E_H, v ∈ V\{e_H\}\}. This enables efficient querying using ordinary graph databases while preserving hypergraph structure losslessly, with support for incremental updates.
+- **Vector Representation Storage**: Generates dense embeddings h_v = f(v) and h\{e_H\} = f(e_H) for all entities and hyperedges to support semantic retrieval.
 
 ### 2. Hypergraph Retrieval Strategy
 
 Designs a dual-path retrieval mechanism to match user queries with relevant entities and hyperedges:
-- **Entity Retrieval**: Extracts key entity set \(V_q\) from question \(q\), retrieves most relevant entities \(\mathcal{R}_V(q)\) via cosine similarity, ranked with confidence scores.
-- **Hyperedge Retrieval**: Directly computes similarity between question vector and all hyperedge vectors to retrieve most relevant hyperedges \(\mathcal{R}_H(q)\), ranked with confidence scores.
-- **Bidirectional Expansion**: Expands from retrieved entities to all associated hyperedges \(\mathcal{F}_V^*\), and from retrieved hyperedges to all associated entities \(\mathcal{F}_H^*\), merging to form complete n-ary relational fact set \(K_H\).
+- **Entity Retrieval**: Extracts key entity set V_q from question q, retrieves most relevant entities R_V(q) via cosine similarity, ranked with confidence scores.
+- **Hyperedge Retrieval**: Directly computes similarity between question vector and all hyperedge vectors to retrieve most relevant hyperedges R_H(q), ranked with confidence scores.
+- **Bidirectional Expansion**: Expands from retrieved entities to all associated hyperedges F_V^*, and from retrieved hyperedges to all associated entities F_H^*, merging to form complete n-ary relational fact set K_H.
 
 ### 3. Hypergraph-Guided Generation
 
 Fuses hypergraph knowledge with traditional chunk retrieval to enhance generation quality:
-- **Knowledge Fusion**: Merges hypergraph knowledge \(K_H\) with retrieved chunks \(K_{\text{chunk}}\) to form final knowledge input \(K^* = K_H \cup K_{\text{chunk}}\).
-- **Generation Augmentation**: Uses a unified CoT-style generation prompt to feed \(K^*\) and user question \(q\) into LLM for final answer \(y^*\).
+- **Knowledge Fusion**: Merges hypergraph knowledge K_H with retrieved chunks K\{chunk\} to form final knowledge input K^* = K_H ∪ K\{chunk\}.
+- **Generation Augmentation**: Uses a unified CoT-style generation prompt to feed K^* and user question q into LLM for final answer y^*.
 
 ## Personal Insight
 
@@ -66,8 +66,8 @@ Fuses hypergraph knowledge with traditional chunk retrieval to enhance generatio
 
 **Innovative Approach**: Introduces **hypergraph structures** to RAG for the first time, with **formal proofs** supporting the theoretical advantages.
 
-- **N-ary Hyperedge Representation**: Each hyperedge \(e_H\) uses natural language description connecting n entities \((n \geq 2)\), directly modeling complete multi-entity facts without decomposition. The paper designs end-to-end LLM extraction prompts for simultaneous knowledge segmentation and entity recognition.
-- **Lossless Bipartite Storage**: Uses transformation \(\Phi\) to store hypergraphs as bipartite graphs, balancing structural expressiveness of hypergraphs with query efficiency of ordinary graph databases, with incremental update support (formal proof in Appendix B.2).
+- **N-ary Hyperedge Representation**: Each hyperedge e_H uses natural language description connecting n entities (n  2), directly modeling complete multi-entity facts without decomposition. The paper designs end-to-end LLM extraction prompts for simultaneous knowledge segmentation and entity recognition.
+- **Lossless Bipartite Storage**: Uses transformation Φ to store hypergraphs as bipartite graphs, balancing structural expressiveness of hypergraphs with query efficiency of ordinary graph databases, with incremental update support (formal proof in Appendix B.2).
 - **Dual Retrieval + Bidirectional Expansion**: Simultaneously retrieves both entities and hyperedges with bidirectional neighborhood expansion, ensuring complete and contextually relevant n-ary relational facts.
 - **Theoretical Proofs** (Appendix B): Rigorously proves using information theory and coding efficiency that: as long as the knowledge base contains at least one n-ary fact (n≥3), hypergraph representation preserves strictly more information than binary graph representation, and yields higher generation quality under the same retrieval budget.
 
