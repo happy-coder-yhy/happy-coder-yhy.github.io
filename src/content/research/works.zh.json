@@ -1,5 +1,15 @@
 [
   {
+    "title": "HyperGraphRAG: Retrieval-Augmented Generation via Hypergraph-Structured Knowledge Representation",
+    "year": "2026",
+    "category": "论文笔记",
+    "summary": "提出首个基于超图的RAG方法HyperGraphRAG，通过超边建模n元关系（n≥2），克服普通图仅支持二元关系的局限。包含知识超图构建、超图检索和超图引导生成三阶段流程，在医学、农业、计算机科学和法律四个领域上超越标准RAG和现有图RAG方法。",
+    "tags": ["检索增强生成", "超图", "n元关系", "知识表示", "图检索增强生成"],
+    "links": [
+      { "label": "查看详情", "url": "/blog/HyperGraphRAG", "type": "link" }
+    ]
+  },
+  {
     "title": "GFM-RAG: Graph Foundation Model for Retrieval Augmented Generation",
     "year": "2026",
     "category": "论文笔记",

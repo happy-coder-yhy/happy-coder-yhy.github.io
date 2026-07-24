@@ -1,5 +1,15 @@
 [
   {
+    "title": "HyperGraphRAG: Retrieval-Augmented Generation via Hypergraph-Structured Knowledge Representation",
+    "year": "2026",
+    "category": "Paper Note",
+    "summary": "Proposes HyperGraphRAG, the first hypergraph-based RAG method that represents n-ary relational facts (n≥2) via hyperedges, overcoming the binary-relation limitation of ordinary graphs. It includes a comprehensive pipeline for knowledge hypergraph construction, retrieval, and generation, and outperforms standard RAG and existing graph-based RAG methods across medicine, agriculture, computer science, and law domains.",
+    "tags": ["Retrieval-Augmented Generation", "Hypergraph", "N-ary Relations", "Knowledge Representation", "GraphRAG"],
+    "links": [
+      { "label": "View Details", "url": "/blog/HyperGraphRAG", "type": "link" }
+    ]
+  },
+  {
     "title": "GFM-RAG: Graph Foundation Model for Retrieval Augmented Generation",
     "year": "2026",
     "category": "Paper Note",
