@@ -1,5 +1,15 @@
 [
   {
+    "title": "PathRAG: Pruning Graph-Based Retrieval Augmented Generation with Relational Paths",
+    "year": "2026",
+    "category": "论文笔记",
+    "summary": "提出PathRAG框架，指出现有图RAG方法的瓶颈在于检索信息冗余而非不足。通过流式剪枝算法高效提取检索节点间的关键关系路径，并以路径结构化方式组织prompt，在6个数据集和5个评估维度上持续优于SOTA基线，同时降低13.69%的token消耗。",
+    "tags": ["检索增强生成", "图检索增强生成", "关系路径", "剪枝算法", "路径提示"],
+    "links": [
+      { "label": "查看详情", "url": "/blog/PathRAG", "type": "link" }
+    ]
+  },
+  {
     "title": "HyperGraphRAG: Retrieval-Augmented Generation via Hypergraph-Structured Knowledge Representation",
     "year": "2026",
     "category": "论文笔记",

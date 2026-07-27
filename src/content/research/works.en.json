@@ -1,5 +1,15 @@
 [
   {
+    "title": "PathRAG: Pruning Graph-Based Retrieval Augmented Generation with Relational Paths",
+    "year": "2026",
+    "category": "Paper Note",
+    "summary": "Proposes PathRAG, identifying that the bottleneck of current graph-based RAG methods lies in the redundancy of retrieved information rather than insufficiency. Through flow-based pruning, it efficiently extracts key relational paths between retrieved nodes, and organizes prompts in a path-structured format. PathRAG consistently outperforms SOTA baselines across 6 datasets and 5 evaluation dimensions while reducing token consumption by 13.69%.",
+    "tags": ["Retrieval-Augmented Generation", "GraphRAG", "Relational Paths", "Pruning Algorithm", "Path-based Prompting"],
+    "links": [
+      { "label": "View Details", "url": "/blog/PathRAG", "type": "link" }
+    ]
+  },
+  {
     "title": "HyperGraphRAG: Retrieval-Augmented Generation via Hypergraph-Structured Knowledge Representation",
     "year": "2026",
     "category": "Paper Note",
