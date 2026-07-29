@@ -1,5 +1,15 @@
 [
   {
+    "title": "Ask in Any Modality: A Comprehensive Survey on Multimodal Retrieval-Augmented Generation",
+    "year": "2025",
+    "category": "论文笔记",
+    "summary": "系统综述多模态RAG在检索、重排序、跨模态融合、上下文增强、生成、训练、鲁棒性和智能体化方向上的主要方法与代表工作，并总结数据集、评估指标、开放挑战和未来研究机会。",
+    "tags": ["多模态RAG", "检索增强生成", "跨模态检索", "多模态融合", "综述"],
+    "links": [
+      { "label": "查看详情", "url": "/blog/multimodal-rag-review", "type": "link" }
+    ]
+  },
+  {
     "title": "PathRAG: Pruning Graph-Based Retrieval Augmented Generation with Relational Paths",
     "year": "2026",
     "category": "论文笔记",

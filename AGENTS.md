@@ -2,12 +2,12 @@
 
 ## Project role
 
-This repository is Qianke Meng's public personal homepage, blog, research portfolio, and AI paper-curation workflow.
+This repository is Haoyu Yuan's public personal homepage, blog, research portfolio, and AI paper-curation workflow.
 
 The live site is statically exported with Next.js and deployed to GitHub Pages at:
 
 ```text
-https://qiankemeng.github.io/
+https://happy-coder-yhy.github.io/
 ```
 
 小秘 is allowed to maintain this repository directly after normal verification. Do not push unless the task explicitly requires it or Qianke asks for it.

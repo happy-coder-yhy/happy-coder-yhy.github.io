@@ -1,5 +1,15 @@
 [
   {
+    "title": "Ask in Any Modality: A Comprehensive Survey on Multimodal Retrieval-Augmented Generation",
+    "year": "2025",
+    "category": "Paper Note",
+    "summary": "A systematic survey of multimodal RAG methods and representative works across retrieval, reranking, cross-modal fusion, context augmentation, generation, training, robustness, and agentic systems, with datasets, metrics, open challenges, and future directions.",
+    "tags": ["Multimodal RAG", "Retrieval-Augmented Generation", "Cross-Modal Retrieval", "Multimodal Fusion", "Survey"],
+    "links": [
+      { "label": "View Details", "url": "/blog/multimodal-rag-review", "type": "link" }
+    ]
+  },
+  {
     "title": "PathRAG: Pruning Graph-Based Retrieval Augmented Generation with Relational Paths",
     "year": "2026",
     "category": "Paper Note",
