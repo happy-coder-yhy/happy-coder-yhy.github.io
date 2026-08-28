@@ -1,5 +1,15 @@
 [
   {
+    "title": "WAFT-Stereo: Warping-Alone Field Transforms for Stereo Matching",
+    "year": "2026",
+    "category": "Paper Note",
+    "summary": "Introduces WAFT-Stereo, a stereo matching framework that replaces cost volumes with high-resolution feature warping and adds a classification-before-regression disparity initialization strategy. It reaches SOTA or Pareto-frontier performance on ETH3D, KITTI, and Middlebury while running 1.8 to 6.7 times faster than strong baselines.",
+    "tags": ["Stereo Matching", "Depth Estimation", "Binocular Vision", "Warping", "Computer Vision"],
+    "links": [
+      { "label": "View Details", "url": "/blog/WAFT-Stereo", "type": "link" }
+    ]
+  },
+  {
     "title": "Ask in Any Modality: A Comprehensive Survey on Multimodal Retrieval-Augmented Generation",
     "year": "2025",
     "category": "Paper Note",

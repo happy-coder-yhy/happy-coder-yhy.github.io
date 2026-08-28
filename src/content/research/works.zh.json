@@ -1,5 +1,15 @@
 [
   {
+    "title": "WAFT-Stereo: Warping-Alone Field Transforms for Stereo Matching",
+    "year": "2026",
+    "category": "论文笔记",
+    "summary": "提出WAFT-Stereo，一个不依赖代价体的立体匹配框架。通过高分辨率特征warping替代cost volume，并引入先分类后回归的视差初始化策略，在ETH3D、KITTI和Middlebury公开榜单上取得SOTA或Pareto前沿表现，同时实现1.8到6.7倍推理加速。",
+    "tags": ["立体匹配", "深度估计", "双目视觉", "Warping", "计算机视觉"],
+    "links": [
+      { "label": "查看详情", "url": "/blog/WAFT-Stereo", "type": "link" }
+    ]
+  },
+  {
     "title": "Ask in Any Modality: A Comprehensive Survey on Multimodal Retrieval-Augmented Generation",
     "year": "2025",
     "category": "论文笔记",
