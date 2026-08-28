@@ -5,6 +5,10 @@ export const siteConfig = {
     name: '袁皓宇',
     email: 'yhy2004117@163.com'
   },
+  contacts: {
+    wechatOfficial: '猿始人读研历险记',
+    xiaohongshu: '1563844852'
+  },
   links: {
     github: 'https://github.com/happy-coder-yhy',
     email: 'mailto:yhy2004117@163.com'

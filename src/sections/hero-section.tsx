@@ -1,17 +1,19 @@
+import Image from 'next/image';
+
 export function HeroSection({ locale }: { locale: 'zh' | 'en' }) {
   const copy = locale === 'zh'
     ? {
-        tagline: '杭州电子科技大学 · 计算机技术',
-        title: '袁皓宇的知识 Wiki',
-        intro: '你好，我是袁皓宇，杭州电子科技大学 2026 级计算机技术专业硕士研究生，本科毕业于中国民航大学。这里记录了我的学习经历、论文阅读笔记与项目经验，希望这些内容对你有所启发。',
+        tagline: '杭州电子科技大学 · 计算机技术 · MIL媒体智能实验室',
+        title: '袁皓宇的个人网站',
+        intro: '你好，我是袁皓宇，杭州电子科技大学 2026 级计算机技术专业硕士研究生，本科毕业于中国民航大学。喜欢唱歌、音乐、健身。这里记录了我的项目经历、论文笔记与日常随笔，欢迎大家评论交流。',
         actionNotes: '查看论文笔记',
         actionExperience: '了解我的经历',
         status: '当前关注：LLM Agent',
       }
     : {
-        tagline: 'HDU · Computer Science',
-        title: "Haoyu Yuan's Knowledge Wiki",
-        intro: "Hi, I'm Haoyu Yuan (袁皓宇), a 2026 master's student in Computer Science at Hangzhou Dianzi University, with a B.Eng. from Civil Aviation University of China. This wiki documents my learning journey, paper reading notes, and project experiences.",
+        tagline: 'HDU · Computer Technology · Media Intelligence Lab',
+        title: "Haoyu Yuan's Personal Website",
+        intro: "Hi, I'm Haoyu Yuan (袁皓宇), a 2026 master's student in Computer Science at Hangzhou Dianzi University, with a B.Eng. from Civil Aviation University of China. This wiki documents my project experiences, paper reading notes, and daily essays. Feel free to comment or communicate with me.",
         actionNotes: 'View Paper Notes',
         actionExperience: 'My Experience',
         status: 'Current focus: LLM Agent systems, knowledge externalization & agent collaboration',
@@ -43,8 +45,15 @@ export function HeroSection({ locale }: { locale: 'zh' | 'en' }) {
           </div>
           <div className="relative">
             <div className="mx-auto max-w-[21rem] rounded-[1.75rem] border border-[var(--border)] bg-[var(--surface-strong)] p-4 shadow-xl shadow-black/10">
-              <div className="relative aspect-square overflow-hidden rounded-[1.35rem] border border-[var(--border)] bg-gradient-to-br from-[var(--accent-soft)] via-[var(--accent)]/20 to-[var(--accent-soft)] flex items-center justify-center">
-                <span className="text-6xl font-bold text-[var(--accent)] select-none">皓宇</span>
+              <div className="relative aspect-square overflow-hidden rounded-[1.35rem] border border-[var(--border)] bg-[var(--surface)]">
+                <Image
+                  src="/images/avatars/avatar.jpg"
+                  alt={locale === 'zh' ? '袁皓宇头像' : 'Haoyu Yuan avatar'}
+                  fill
+                  priority
+                  sizes="(min-width: 1024px) 21rem, 85vw"
+                  className="object-cover"
+                />
               </div>
               <div className="mt-4 grid grid-cols-3 gap-2">
                 <div className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-3 text-center">
