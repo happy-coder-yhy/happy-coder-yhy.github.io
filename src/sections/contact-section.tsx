@@ -30,10 +30,10 @@ export function ContactSection({ locale }: { locale: 'zh' | 'en' }) {
         <p className="mx-auto mt-3 max-w-2xl text-center text-sm leading-6 text-[var(--muted)]">
           {copy.description}
         </p>
-        <div className="mt-10 flex flex-col items-center gap-6">
+        <div className="mx-auto mt-10 grid w-full max-w-3xl grid-cols-1 gap-5 sm:grid-cols-2">
           <Link
             href={`mailto:${siteConfig.author.email}`}
-            className="group flex w-full max-w-md items-center gap-3 glass-card rounded-2xl p-4"
+            className="group flex min-h-20 w-full items-center gap-3 glass-card rounded-2xl p-4"
           >
             <div className="rounded-full bg-[var(--accent)]/10 p-2 text-[var(--accent)]">
               <Mail className="h-5 w-5" />
@@ -47,7 +47,7 @@ export function ContactSection({ locale }: { locale: 'zh' | 'en' }) {
             href={siteConfig.links.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="group flex w-full max-w-md items-center gap-3 glass-card rounded-2xl p-4"
+            className="group flex min-h-20 w-full items-center gap-3 glass-card rounded-2xl p-4"
           >
             <div className="rounded-full bg-[var(--accent)]/10 p-2 text-[var(--accent)]">
               <GitFork className="h-5 w-5" />
@@ -57,7 +57,7 @@ export function ContactSection({ locale }: { locale: 'zh' | 'en' }) {
               <div className="text-xs text-[var(--muted)]">github.com/happy-coder-yhy</div>
             </div>
           </Link>
-          <div className="group flex w-full max-w-md items-center gap-3 glass-card rounded-2xl p-4">
+          <div className="group flex min-h-20 w-full items-center gap-3 glass-card rounded-2xl p-4">
             <div className="rounded-full bg-[var(--accent)]/10 p-2 text-[var(--accent)]">
               <MessageCircle className="h-5 w-5" />
             </div>
@@ -66,7 +66,7 @@ export function ContactSection({ locale }: { locale: 'zh' | 'en' }) {
               <div className="text-xs text-[var(--muted)]">{siteConfig.contacts.wechatOfficial}</div>
             </div>
           </div>
-          <div className="group flex w-full max-w-md items-center gap-3 glass-card rounded-2xl p-4">
+          <div className="group flex min-h-20 w-full items-center gap-3 glass-card rounded-2xl p-4">
             <div className="rounded-full bg-[var(--accent)]/10 p-2 text-[var(--accent)]">
               <BookOpen className="h-5 w-5" />
             </div>
