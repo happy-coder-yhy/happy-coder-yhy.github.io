@@ -2,7 +2,7 @@
   {
     "title": "CenterDepth Stereo Fisheye Matching Benchmark",
     "summary": "A Python benchmark project for comparing stereo matching models on dual-fisheye camera data. It standardizes video decoding, PTS synchronization, fisheye epipolar rectification, and experiment statistics across WAFT, S2M2, LiteAnyStereo 2, Fast Foundation Stereo, StereoNet, and OpenCV baselines; the standard output is left-camera depth video, with optional bidirectional disparity and center-view RGB/metric-depth synthesis.",
-    "tags": ["Python", "Stereo Matching", "Fisheye Camera", "Depth Estimation"],
+    "tags": ["Python", "Stereo Matching", "Fisheye Camera", "Depth Estimation", "WAFT", "S2M2", "LiteAnyStereo 2", "FastFoundationStereo", "StereoAnyVideo", "BM/SGBM", "StereoNet"],
     "links": {
       "github": "https://github.com/happy-coder-yhy/CenterDepth"
     }
