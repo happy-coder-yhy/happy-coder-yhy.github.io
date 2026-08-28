@@ -1,5 +1,13 @@
 [
   {
+    "title": "CenterDepth 双目鱼眼立体匹配对比",
+    "summary": "面向双目鱼眼相机的立体匹配模型对比工程，在统一的视频解码、PTS 同步、鱼眼极线校正与统计口径下评估 WAFT、S2M2、LiteAnyStereo 2、Fast Foundation Stereo、StereoNet 与 OpenCV 基线；以左相机视角深度视频作为标准输出，并支持双向视差与中心视角 RGB/米制深度合成实验。",
+    "tags": ["Python", "Stereo Matching", "Fisheye Camera", "Depth Estimation"],
+    "links": {
+      "github": "https://github.com/happy-coder-yhy/CenterDepth"
+    }
+  },
+  {
     "title": "ZPDS 多源数据清洗与标准化",
     "summary": "面向视频与多源传感数据的数据清洗流水线，覆盖帧数一致性、坏帧、时间戳缺口、深度/IMU/音频/动作信号异常，以及黑屏、过曝、模糊、抖动等图像质量检测；支持手部检测、人脸与隐私信息识别遮挡，并生成可裁剪、切分、标记或隔离复核的标准化片段。",
     "tags": ["Python", "Video Cleaning", "Hand Detection", "Privacy Masking"],

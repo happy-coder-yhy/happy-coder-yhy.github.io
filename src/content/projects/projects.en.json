@@ -1,5 +1,13 @@
 [
   {
+    "title": "CenterDepth Stereo Fisheye Matching Benchmark",
+    "summary": "A Python benchmark project for comparing stereo matching models on dual-fisheye camera data. It standardizes video decoding, PTS synchronization, fisheye epipolar rectification, and experiment statistics across WAFT, S2M2, LiteAnyStereo 2, Fast Foundation Stereo, StereoNet, and OpenCV baselines; the standard output is left-camera depth video, with optional bidirectional disparity and center-view RGB/metric-depth synthesis.",
+    "tags": ["Python", "Stereo Matching", "Fisheye Camera", "Depth Estimation"],
+    "links": {
+      "github": "https://github.com/happy-coder-yhy/CenterDepth"
+    }
+  },
+  {
     "title": "ZPDS Multi-source Data Cleaning and Standardization",
     "summary": "A Python pipeline for cleaning video and multi-source sensor data. It checks frame-count consistency, bad frames, timestamp gaps, depth/IMU/audio/action-signal anomalies, and image quality issues such as black frames, overexposure, blur, and camera shake; it also supports hand detection plus face and privacy masking before producing standardized segments for trimming, splitting, flagging, or review.",
     "tags": ["Python", "Video Cleaning", "Hand Detection", "Privacy Masking"],
