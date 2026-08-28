@@ -1,5 +1,13 @@
 [
   {
+    "title": "ZPDS Multi-source Data Cleaning and Standardization",
+    "summary": "A Python pipeline for cleaning video and multi-source sensor data. It checks frame-count consistency, bad frames, timestamp gaps, depth/IMU/audio/action-signal anomalies, and image quality issues such as black frames, overexposure, blur, and camera shake; it also supports hand detection plus face and privacy masking before producing standardized segments for trimming, splitting, flagging, or review.",
+    "tags": ["Python", "Video Cleaning", "Hand Detection", "Privacy Masking"],
+    "links": {
+      "github": "https://github.com/happy-coder-yhy/ZPDS"
+    }
+  },
+  {
     "title": "Zata Data Collection Platform Agent",
     "summary": "The intelligent agent of the data collection platform based on Hermes Agent realizes intelligent platform data management. Through MCP Tools, tasks and job maintenance are automated, and it supports operations by multiple roles such as administrators and collectors.",
     "tags": ["Harness Agent", "MCP", "Python", "Hermes"],

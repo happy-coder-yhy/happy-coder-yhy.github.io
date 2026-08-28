@@ -1,5 +1,13 @@
 [
   {
+    "title": "ZPDS 多源数据清洗与标准化",
+    "summary": "面向视频与多源传感数据的数据清洗流水线，覆盖帧数一致性、坏帧、时间戳缺口、深度/IMU/音频/动作信号异常，以及黑屏、过曝、模糊、抖动等图像质量检测；支持手部检测、人脸与隐私信息识别遮挡，并生成可裁剪、切分、标记或隔离复核的标准化片段。",
+    "tags": ["Python", "Video Cleaning", "Hand Detection", "Privacy Masking"],
+    "links": {
+      "github": "https://github.com/happy-coder-yhy/ZPDS"
+    }
+  },
+  {
     "title": "Zata 数采平台 Agent",
     "summary": "基于 Hermes Agent 的数采平台智能体，实现智能化的平台数据管理。通过 MCP Tools 将任务、作业维护自动化，支持管理员、采集员等多角色操作。",
     "tags": ["Harness Agent", "MCP", "Python", "Hermes"],
