@@ -1,4 +1,4 @@
-# 袁皓宇的知识 Wiki
+# 个人网站
 
 基于 Next.js 15 的个人知识库网站，静态导出并部署到 GitHub Pages。
 
@@ -11,7 +11,7 @@
 - **姓名**：袁皓宇（Haoyu Yuan）
 - **硕士**：杭州电子科技大学，计算机技术，2026 级
 - **本科**：中国民航大学，计算机科学与技术，2022 - 2026
-- **研究方向**：LLM Agent(暂未确定)
+- **研究方向**：光流、深度估计与具身 Agent
 - **GitHub**：[happy-coder-yhy](https://github.com/happy-coder-yhy)
 
 ## 功能特性
@@ -67,6 +67,8 @@ npm run lint       # ESLint 检查
 - 站点元信息：`src/config/site.ts`
 
 博客文件命名：`{slug}.zh.md` / `{slug}.en.md`
+
+首页论文清单和 `/research` 读取 `src/content/research/works.zh.json` / `works.en.json`，不会自动收录博客。新增论文笔记时需同步这两份清单；首页显示前四项，最新笔记放在清单首位。
 
 ## 部署
 

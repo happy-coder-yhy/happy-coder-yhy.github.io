@@ -1,5 +1,15 @@
 [
   {
+    "title": "World-Action Models for Robot Learning and Control: A Survey",
+    "year": "2026",
+    "category": "论文笔记",
+    "summary": "梳理世界动作模型（WAM）的概念边界、联合预测与逆动力学、端到端与双系统架构，以及视频先验到动作对齐的训练流程。结合操作、导航和驾驶任务，讨论预测质量、闭环控制评估与开放问题。",
+    "tags": ["世界动作模型", "世界模型", "机器人学习", "具身智能", "VLA", "综述"],
+    "links": [
+      { "label": "查看详情", "url": "/blog/world-action-models-survey" }
+    ]
+  },
+  {
     "title": "WAFT-Stereo: Warping-Alone Field Transforms for Stereo Matching",
     "year": "2026",
     "category": "论文笔记",

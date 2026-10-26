@@ -1,18 +1,18 @@
 {
-  "headline": "LLM Agent Systems & Knowledge Externalization",
-  "summary": "Focusing on LLM-driven agent systems, with emphasis on knowledge externalization mechanisms — including memory management, skill orchestration, protocol design, and harness engineering. Building deep understanding through systematic paper reading.",
+  "headline": "Optical Flow, Depth & Embodied Agents",
+  "summary": "Focusing on optical flow and depth estimation, alongside perception, prediction, planning, and control for embodied agents. Exploring visual geometry and world models for robotic tasks.",
   "focus": [
     {
-      "title": "LLM Agent Systems",
-      "description": "Researching LLM-based agent architectures, including tool use, reasoning & planning, multi-agent collaboration, and task orchestration."
+      "title": "Optical Flow",
+      "description": "Studying pixel-level motion estimation in image sequences, including feature matching, iterative refinement, and robust estimation under occlusion and large displacements."
     },
     {
-      "title": "Knowledge Externalization",
-      "description": "Exploring how LLM agents externalize and manage internal knowledge, including memory systems, skill libraries, communication protocols, and environment interaction interfaces."
+      "title": "Depth Estimation",
+      "description": "Studying monocular and stereo depth estimation, stereo matching, and 3D geometry, with attention to accuracy, generalization, and inference efficiency."
     },
     {
-      "title": "Harness Engineering",
-      "description": "Engineering practices for agent systems, including experiment platforms, evaluation framework design, and MCP toolchain development."
+      "title": "Embodied Agents",
+      "description": "Studying embodied agents that combine visual perception, world models, and action generation for task planning, interaction, and closed-loop control."
     }
   ]
 }

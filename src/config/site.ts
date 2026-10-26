@@ -1,6 +1,6 @@
 export const siteConfig = {
-  name: '袁皓宇的知识 Wiki',
-  description: '袁皓宇的知识库与个人主页 — 记录学习经历、论文笔记、项目经验与技术思考。',
+  name: '个人网站',
+  description: '袁皓宇的个人网站 — 记录学习经历、论文笔记、项目经验与技术思考。',
   author: {
     name: '袁皓宇',
     email: 'yhy2004117@163.com'

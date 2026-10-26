@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { ResearchListing } from '@/sections/research-listing';
 
 export const metadata: Metadata = {
-  title: 'Paper Notes Wiki | Haoyu Yuan',
+  title: 'Paper Reading Notes',
   description: 'Paper reading notes and key takeaways from top AI/ML conferences.'
 };
 

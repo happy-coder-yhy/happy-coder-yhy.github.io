@@ -4,13 +4,14 @@ import { cn } from '@/lib/cn';
 import { SiteHeader } from '@/components/site-header';
 import { SiteFooter } from '@/components/site-footer';
 import { Providers } from '@/components/providers';
+import { siteConfig } from '@/config/site';
 
 export const metadata: Metadata = {
   title: {
-    default: '袁皓宇的知识 Wiki',
-    template: '%s | 袁皓宇的知识 Wiki'
+    default: siteConfig.name,
+    template: `%s | ${siteConfig.name}`
   },
-  description: '袁皓宇的知识库与个人主页 — 记录学习经历、论文笔记、项目经验与技术思考。'
+  description: siteConfig.description
 };
 
 export default function RootLayout({

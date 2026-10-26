@@ -1,5 +1,15 @@
 [
   {
+    "title": "World-Action Models for Robot Learning and Control: A Survey",
+    "year": "2026",
+    "category": "Paper Note",
+    "summary": "Maps the scope of World-Action Models (WAMs), joint prediction and inverse dynamics, shared-backbone and dual-system architectures, and training from video priors to action grounding. Examines predictive quality, closed-loop control evaluation, and open questions across manipulation, navigation, and driving.",
+    "tags": ["World-Action Models", "World Models", "Robot Learning", "Embodied AI", "VLA", "Survey"],
+    "links": [
+      { "label": "View Details", "url": "/en/blog/world-action-models-survey" }
+    ]
+  },
+  {
     "title": "WAFT-Stereo: Warping-Alone Field Transforms for Stereo Matching",
     "year": "2026",
     "category": "Paper Note",

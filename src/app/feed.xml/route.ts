@@ -1,4 +1,5 @@
 import { getAllPosts } from '@/lib/blog';
+import { siteConfig } from '@/config/site';
 
 export const dynamic = 'force-static';
 
@@ -9,9 +10,9 @@ export async function GET() {
   const rss = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>小王的知识 Wiki</title>
+    <title>${siteConfig.name}</title>
     <link>${siteUrl}</link>
-    <description>学习经历、论文笔记、项目经验与技术思考</description>
+    <description>${siteConfig.description}</description>
     <language>zh-CN</language>
     <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
     <atom:link href="${siteUrl}/feed.xml" rel="self" type="application/rss+xml"/>
