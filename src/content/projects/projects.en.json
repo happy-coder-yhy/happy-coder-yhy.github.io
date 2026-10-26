@@ -1,5 +1,13 @@
 [
   {
+    "title": "ZPDS Depth Sequence Compression",
+    "summary": "A CPU-based compression tool for metric float32 depth sequences, supporting NPY/Zarr, per-frame chunks, streaming writes, and on-demand reads. It combines piecewise linear/logarithmic transforms with SZ3, offers S1/S2/S3 error-tolerance presets, and provides encoding inspection and reconstruction-error verification.",
+    "tags": ["Python", "Depth Compression", "Zarr", "SZ3", "Error-bounded Compression"],
+    "links": {
+      "github": "https://github.com/happy-coder-yhy/zpds-depth-cp"
+    }
+  },
+  {
     "title": "CenterDepth Stereo Fisheye Matching Benchmark",
     "summary": "A Python benchmark project for comparing stereo matching models on dual-fisheye camera data. It standardizes video decoding, PTS synchronization, fisheye epipolar rectification, and experiment statistics across WAFT, S2M2, LiteAnyStereo 2, Fast Foundation Stereo, StereoNet, and OpenCV baselines; the standard output is left-camera depth video, with optional bidirectional disparity and center-view RGB/metric-depth synthesis.",
     "tags": ["Python", "Stereo Matching", "Fisheye Camera", "Depth Estimation", "WAFT", "S2M2", "LiteAnyStereo 2", "FastFoundationStereo", "StereoAnyVideo", "BM/SGBM", "StereoNet"],
