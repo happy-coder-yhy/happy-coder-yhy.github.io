@@ -1,8 +1,8 @@
 [
   {
     "title": "ZPDS 深度序列压缩",
-    "summary": "面向米制 float32 深度序列的 CPU 压缩工具，支持 NPY/Zarr、逐帧分块、流式写入与按需读取。通过分段线性/对数变换结合 SZ3，提供 S1/S2/S3 三档误差容限，并支持编码检查和重建误差验证。",
-    "tags": ["Python", "Depth Compression", "Zarr", "SZ3", "Error-bounded Compression"],
+    "summary": "面向米制 float32 深度序列的 CPU 压缩工具，结合分段线性/对数变换与 SZ3，提供 S1/S2/S3 三档误差容限。支持 NPY、Zarr 目录与 Zarr ZipStore（.zarr.zip）单文件存储，提供逐帧分块、流式写入、按帧或区域读取、编码检查与误差验证，可将已有 Zarr 目录无重编码打包，并通过 HTTP Range 或 S3 远程按需读取。",
+    "tags": ["Python", "Depth Compression", "Zarr ZipStore", "SZ3", "Error-bounded Compression"],
     "links": {
       "github": "https://github.com/happy-coder-yhy/zpds-depth-cp"
     }

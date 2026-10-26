@@ -1,8 +1,8 @@
 [
   {
     "title": "ZPDS Depth Sequence Compression",
-    "summary": "A CPU-based compression tool for metric float32 depth sequences, supporting NPY/Zarr, per-frame chunks, streaming writes, and on-demand reads. It combines piecewise linear/logarithmic transforms with SZ3, offers S1/S2/S3 error-tolerance presets, and provides encoding inspection and reconstruction-error verification.",
-    "tags": ["Python", "Depth Compression", "Zarr", "SZ3", "Error-bounded Compression"],
+    "summary": "A CPU-based compression tool for metric float32 depth sequences, combining piecewise linear/logarithmic transforms with SZ3 and S1/S2/S3 error-tolerance presets. It supports NPY, Zarr directories, and single-file Zarr ZipStore (.zarr.zip) storage, with per-frame chunks, streaming writes, frame or region reads, encoding inspection, and error verification. Existing Zarr directories can be packed without re-encoding, and remote data can be read on demand over HTTP Range or S3.",
+    "tags": ["Python", "Depth Compression", "Zarr ZipStore", "SZ3", "Error-bounded Compression"],
     "links": {
       "github": "https://github.com/happy-coder-yhy/zpds-depth-cp"
     }
