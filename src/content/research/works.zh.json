@@ -1,5 +1,15 @@
 [
   {
+    "title": "Harness VLA: Steering Frozen VLAs into Reliable Manipulation Primitives via Memory-Guided Agents",
+    "year": "2026",
+    "category": "论文笔记",
+    "summary": "将冻结 VLA 封装为可重试的局部接触原语，结合任务记忆、全局失败经验与解析控制完成目标重绑定和长程操作。同骨干 LIBERO-Pro 成功率从 50.0% 提升至 82.4%，并讨论少样本记忆、clean-to-randomized 迁移和 Flash Mode 的评测边界。",
+    "tags": ["VLA", "具身智能", "机器人操作", "Agent记忆", "Harness工程"],
+    "links": [
+      { "label": "查看详情", "url": "/blog/HarnessVLA", "type": "link" }
+    ]
+  },
+  {
     "title": "World-Action Models for Robot Learning and Control: A Survey",
     "year": "2026",
     "category": "论文笔记",

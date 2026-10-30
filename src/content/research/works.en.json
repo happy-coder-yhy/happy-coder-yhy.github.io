@@ -1,5 +1,15 @@
 [
   {
+    "title": "Harness VLA: Steering Frozen VLAs into Reliable Manipulation Primitives via Memory-Guided Agents",
+    "year": "2026",
+    "category": "Paper Note",
+    "summary": "Exposes a frozen VLA as a retryable local contact primitive, combining task memory, global failure knowledge, and analytic control for goal rebinding and long-horizon manipulation. Improves same-backbone LIBERO-Pro success from 50.0% to 82.4%, with notes on memory, clean-to-randomized transfer, and Flash evaluation conditions.",
+    "tags": ["VLA", "Embodied AI", "Robot Manipulation", "Agent Memory", "Harness Engineering"],
+    "links": [
+      { "label": "View Details", "url": "/en/blog/HarnessVLA", "type": "link" }
+    ]
+  },
+  {
     "title": "World-Action Models for Robot Learning and Control: A Survey",
     "year": "2026",
     "category": "Paper Note",
