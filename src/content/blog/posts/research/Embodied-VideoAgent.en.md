@@ -114,6 +114,24 @@ A natural follow-up is to fix the VLA and harness, then compare ordinary memory 
 - **Simulation is not continual real deployment:** two-agent data generation and one robot example do not show that memory remains clean across long, multi-task operation.
 - **No closed loop from memory to validated skill:** state maintenance is demonstrated, but experience abstraction, applicability conditions, and negative transfer remain open.
 
+### Geometric Filtering with Fisheye Cameras
+
+In Appendix B, the paper sorts object surface points by their distance to the camera, removes the nearest and farthest 10%, and computes the 3D bounding box from the remainder. This is a cheap heuristic when foreground and background errors mainly occupy the two extremes. A fisheye transfer requires separating two questions: whether the distance measure is appropriate, and whether a fixed trimming ratio is appropriate.
+
+The paper uses `distances to the camera`, meaning Euclidean camera distance
+
+`d = sqrt(X² + Y² + Z²)`
+
+rather than optical-axis depth \(d_z=Z\). They satisfy \(d=Z/\cos\theta\). With a narrow field of view the difference may be modest; in a fisheye image, points near the image boundary can have much larger Euclidean distance even when they share the same Z-depth plane. Correct fisheye back-projection still makes Euclidean distance geometrically valid, but it no longer directly represents front-to-back surface order.
+
+The object geometry itself is also more spread out across a large field of view. A tabletop, for example, may cross from near-axis regions to large-angle regions, so its true distance distribution can overlap the distances of erroneous foreground or background points. Removing 10% at each end may therefore delete valid surface points. The issue is not only distortion; it is the overlap between the object's geometry distribution and the outlier distribution.
+
+Changing 10% to 5% or 15% is therefore not the main research question. Candidate alternatives include adaptive percentile selection, Z-depth filtering for front/back reasoning, 3D spatial clustering, and multi-view consistency. The most promising direction is temporal or multi-view consistent point filtering: for an object observed at consecutive times, test whether a point has a corresponding structure from another view, satisfies reprojection geometry, and follows the object's temporal motion. A point confidence could combine
+
+`C(pᵢ) = λ₁ C_depth(pᵢ) + λ₂ C_multi-view(pᵢ) + λ₃ C_temporal(pᵢ)`
+
+This would combine depth reliability, cross-view geometry, and temporal motion evidence instead of discarding a fixed fraction of points. It also gives my research direction a concrete interface: pass calibrated geometric confidence to object memory and action planning, rather than treating a depth map as sufficient evidence by itself.
+
 ## Further Reading
 
 - [Embodied VideoAgent, arXiv](https://arxiv.org/abs/2501.00358)
