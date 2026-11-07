@@ -1,5 +1,13 @@
 [
   {
+    "title": "Embodied VideoAgent: Persistent Memory from Egocentric Videos and Embodied Sensors Enables Dynamic Scene Understanding",
+    "year": "2025",
+    "category": "Paper Note",
+    "summary": "Fuses egocentric video, depth, and camera poses into an updatable 3D object memory, with VLM state updates, temporal/spatial queries, and action primitives for dynamic scene understanding.",
+    "tags": ["Embodied AI", "Episodic Memory", "Dynamic Scene Understanding", "Video Understanding", "3D Vision"],
+    "links": [{ "label": "View Details", "url": "/en/blog/Embodied-VideoAgent", "type": "link" }]
+  },
+  {
     "title": "Harness VLA: Steering Frozen VLAs into Reliable Manipulation Primitives via Memory-Guided Agents",
     "year": "2026",
     "category": "Paper Note",
