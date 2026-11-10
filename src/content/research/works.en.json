@@ -1,5 +1,13 @@
 [
   {
+    "title": "VideoAgent: A Memory-augmented Multimodal Agent for Video Understanding",
+    "year": "2024",
+    "category": "Paper Note",
+    "summary": "Converts long videos into temporal and object memory, then uses an LLM to solve queries through segment localization, caption retrieval, visual QA, and object-database queries, showing how minimal tools and structured memory support long-range reasoning.",
+    "tags": ["Video Understanding", "Multimodal Agent", "Long-term Memory", "Tool Use", "Embodied AI"],
+    "links": [{ "label": "View Details", "url": "/en/blog/VideoAgent", "type": "link" }]
+  },
+  {
     "title": "Embodied VideoAgent: Persistent Memory from Egocentric Videos and Embodied Sensors Enables Dynamic Scene Understanding",
     "year": "2025",
     "category": "Paper Note",

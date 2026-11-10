@@ -1,5 +1,13 @@
 [
   {
+    "title": "VideoAgent: A Memory-augmented Multimodal Agent for Video Understanding",
+    "year": "2024",
+    "category": "论文笔记",
+    "summary": "将长视频压缩为时间记忆和对象记忆，由 LLM 通过片段定位、字幕检索、视觉问答和对象数据库查询逐步完成视频理解；强调最小工具集与结构化记忆对长程时序推理的作用。",
+    "tags": ["视频理解", "多模态 Agent", "长期记忆", "工具调用", "具身智能"],
+    "links": [{ "label": "查看详情", "url": "/blog/VideoAgent", "type": "link" }]
+  },
+  {
     "title": "Embodied VideoAgent: Persistent Memory from Egocentric Videos and Embodied Sensors Enables Dynamic Scene Understanding",
     "year": "2025",
     "category": "论文笔记",
