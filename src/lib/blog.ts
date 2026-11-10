@@ -224,7 +224,8 @@ export function getFilteredPosts(
 export function getPostBySlug(slug: string, locale: 'zh' | 'en'): BlogPost | null {
   try {
     const allFiles = getMarkdownFiles(postsDirectory);
-    const filePath = allFiles.find((f) => f.endsWith(`${slug}.${locale}.md`));
+    const targetFileName = `${slug}.${locale}.md`;
+    const filePath = allFiles.find((f) => path.basename(f) === targetFileName);
 
     if (!filePath) {
       return null;
