@@ -1,5 +1,13 @@
 [
   {
+    "title": "Spatiotemporal Knowledge Graphs as Persistent Scene Memory for Embodied Question Answering",
+    "year": "2026",
+    "category": "论文笔记",
+    "summary": "VL-KnG 用单目巡游视频构建时空对象图，结合跨块身份关联和视觉检索回答问题。笔记重点讨论静态巡游记忆与动态场景状态维护之间的差距。",
+    "tags": ["具身问答", "场景记忆", "时空知识图谱", "动态场景"],
+    "links": [{ "label": "查看详情", "url": "/blog/VL-KnG", "type": "link" }]
+  },
+  {
     "title": "VideoAgent: A Memory-augmented Multimodal Agent for Video Understanding",
     "year": "2024",
     "category": "论文笔记",

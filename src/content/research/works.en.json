@@ -1,5 +1,13 @@
 [
   {
+    "title": "Spatiotemporal Knowledge Graphs as Persistent Scene Memory for Embodied Question Answering",
+    "year": "2026",
+    "category": "Paper Note",
+    "summary": "VL-KnG builds a spatiotemporal object graph from monocular tour video and uses cross-chunk identity association and visual retrieval for QA. The notes focus on the gap between tour memory and maintaining state in dynamic scenes.",
+    "tags": ["Embodied Question Answering", "Scene Memory", "Spatiotemporal Knowledge Graphs", "Dynamic Scenes"],
+    "links": [{ "label": "View Details", "url": "/en/blog/VL-KnG", "type": "link" }]
+  },
+  {
     "title": "VideoAgent: A Memory-augmented Multimodal Agent for Video Understanding",
     "year": "2024",
     "category": "Paper Note",
