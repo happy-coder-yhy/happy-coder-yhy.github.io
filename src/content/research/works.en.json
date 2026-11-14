@@ -1,5 +1,13 @@
 [
   {
+    "title": "StereoVLA: Enhancing Vision-Language-Action Models with Stereo Vision",
+    "year": "2026",
+    "category": "Paper Note",
+    "summary": "Fuses a filtered stereo cost volume with left-image semantics and uses interaction-region depth and camera-parameter supervision to improve viewpoint robustness.",
+    "tags": ["Stereo Vision", "Vision-Language-Action Models", "Robot Manipulation", "Viewpoint Robustness"],
+    "links": [{ "label": "View Details", "url": "/en/blog/StereoVLA", "type": "link" }]
+  },
+  {
     "title": "Spatiotemporal Knowledge Graphs as Persistent Scene Memory for Embodied Question Answering",
     "year": "2026",
     "category": "Paper Note",

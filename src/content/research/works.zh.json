@@ -1,5 +1,13 @@
 [
   {
+    "title": "StereoVLA: Enhancing Vision-Language-Action Models with Stereo Vision",
+    "year": "2026",
+    "category": "论文笔记",
+    "summary": "用双目滤波代价体与左图语义特征为动作策略提供几何证据，结合交互区深度与相机参数监督改善视角鲁棒性。",
+    "tags": ["双目视觉", "视觉语言动作模型", "机器人操作", "视角鲁棒性"],
+    "links": [{ "label": "查看详情", "url": "/blog/StereoVLA", "type": "link" }]
+  },
+  {
     "title": "Spatiotemporal Knowledge Graphs as Persistent Scene Memory for Embodied Question Answering",
     "year": "2026",
     "category": "论文笔记",
