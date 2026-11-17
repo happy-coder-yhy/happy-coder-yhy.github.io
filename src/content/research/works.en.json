@@ -1,5 +1,13 @@
 [
   {
+    "title": "VideoARM: Agentic Reasoning over Hierarchical Memory for Long-Form Video Understanding",
+    "year": "2026",
+    "category": "Paper Note",
+    "summary": "Selects intervals based on the question and uses sensory, result, and working memory to organize evidence and inspect local video or audio as needed.",
+    "tags": ["Long-Form Video Understanding", "Multimodal Agents", "Hierarchical Memory", "Temporal Evidence"],
+    "links": [{ "label": "View Details", "url": "/en/blog/VideoARM", "type": "link" }]
+  },
+  {
     "title": "StereoVLA: Enhancing Vision-Language-Action Models with Stereo Vision",
     "year": "2026",
     "category": "Paper Note",

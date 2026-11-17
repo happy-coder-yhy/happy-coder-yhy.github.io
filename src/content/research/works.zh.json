@@ -1,5 +1,13 @@
 [
   {
+    "title": "VideoARM: Agentic Reasoning over Hierarchical Memory for Long-Form Video Understanding",
+    "year": "2026",
+    "category": "论文笔记",
+    "summary": "按问题选择时间区间，用感知、结果和工作记忆组织长视频证据，按需补查图像或音频。",
+    "tags": ["长视频理解", "多模态 Agent", "层次记忆", "时序证据"],
+    "links": [{ "label": "查看详情", "url": "/blog/VideoARM", "type": "link" }]
+  },
+  {
     "title": "StereoVLA: Enhancing Vision-Language-Action Models with Stereo Vision",
     "year": "2026",
     "category": "论文笔记",
