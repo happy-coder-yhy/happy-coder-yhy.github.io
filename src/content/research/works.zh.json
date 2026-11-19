@@ -1,5 +1,13 @@
 [
   {
+    "title": "DSG: Dynamic 3D Scene Graph Construction for Embodied Agents in Changing Indoor Environments",
+    "year": "2026",
+    "category": "论文笔记",
+    "summary": "通过优化后的双视角渲染清理过时物体，并结合视觉上下文推断关系；讨论与时序几何、证据时效和具身记忆更新的衔接。",
+    "tags": ["动态场景图", "三维高斯", "具身记忆", "时序几何"],
+    "links": [{ "label": "查看详情", "url": "/blog/DSG", "type": "link" }]
+  },
+  {
     "title": "VideoARM: Agentic Reasoning over Hierarchical Memory for Long-Form Video Understanding",
     "year": "2026",
     "category": "论文笔记",

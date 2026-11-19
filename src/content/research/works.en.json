@@ -1,5 +1,13 @@
 [
   {
+    "title": "DSG: Dynamic 3D Scene Graph Construction for Embodied Agents in Changing Indoor Environments",
+    "year": "2026",
+    "category": "Paper Note",
+    "summary": "Checks object changes through optimized dual-view rendering and infers relations with visual context, connecting the method to temporal geometry and embodied memory updates.",
+    "tags": ["Dynamic Scene Graphs", "3D Gaussian Splatting", "Embodied Memory", "Temporal Geometry"],
+    "links": [{ "label": "View Details", "url": "/en/blog/DSG", "type": "link" }]
+  },
+  {
     "title": "VideoARM: Agentic Reasoning over Hierarchical Memory for Long-Form Video Understanding",
     "year": "2026",
     "category": "Paper Note",
